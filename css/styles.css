@@ -20,6 +20,13 @@ body {
     letter-spacing: 0.03em;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    outline: 2px solid tomato;
+}
+
 /* site nav */
 
 .header-logo {
@@ -35,6 +42,8 @@ body {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -88,14 +97,17 @@ body {
 
  .hero {
      background-color: #2F303A;
+     text-align: center;
  }
 
  .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
     color: var(--primary-bg-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
  }
 
@@ -163,6 +175,12 @@ body {
 /* Button */
 
 .button {
+    border-radius: 4px;
+    padding: 10px 32px;
+    display: inline-block;
+    min-width: 200px;
+    border: 1px solid transparent;
+
     color: var(--primary-text-color);
     background-color:var(--primary-bg-color);
     font-weight: 700;
