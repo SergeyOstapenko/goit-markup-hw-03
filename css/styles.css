@@ -24,7 +24,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1170px;
-    outline: 2px solid tomato;
 }
 
 /* site nav */
@@ -103,7 +102,6 @@ body {
  .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
-
     color: var(--primary-bg-color);
     font-weight: 900;
     font-size: 44px;
@@ -113,12 +111,26 @@ body {
 
  /* Section */
 
+ .section {
+     margin-bottom: 94px;
+ }
+
  .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
  }
+
+ .section.team {
+     margin-bottom: 0;
+     padding-top: 94px;
+     padding-bottom: 94px;
+     background-color: var(--secondary-bg-color);
+}
 
  .team-profession, .specialization-text {
      color: var(--title-text-color);
@@ -145,12 +157,18 @@ body {
     }
 
 .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
 }  
 
 .section-text {
+    margin-top: 0;
+    margin-bottom: 0;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -158,18 +176,20 @@ body {
 
 /* Team */
 
+.team-list {
+    text-align: center;
+}
+
 .team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
 }
 
 .team-profession {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    text-align: center;
 }
 
 /* Button */
