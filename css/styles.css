@@ -10,6 +10,7 @@
     --accent-text-color: #2196F3;
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA;
+    --item-br-color: #EEEEEE;
 }
 
 
@@ -24,11 +25,39 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    outline: 1px solid tomato;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container.main-container {
+    display: flex;
+    align-items: center;
 }
 
 /* site nav */
 
-.header-logo {
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.header-list .item + .item {
+    margin-left: 50px;
+}
+
+.header-logo, .footer-logo {
     color: var(--accent-text-color);
     font-family: 'Raleway', 'sans-serif';
     font-weight: 700;
@@ -40,11 +69,6 @@ body {
     color: var(--primary-text-color);
 }
 
-.list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
 
 .link {
     text-decoration: none;
@@ -68,10 +92,17 @@ body {
 }
 
 .header-address {
+    display: flex;
+    margin-left: auto;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.header-address .item + .item {
+    margin-left: 50px;
 }
 
 .header-email {
@@ -89,6 +120,10 @@ body {
 .header-tel:hover,
 .header-tel:focus {
     color: var(--accent-text-color);
+}
+
+.header.header-portfolio {
+    margin-bottom: 94px;
 }
 
 
@@ -137,6 +172,9 @@ body {
  }
 
  .specialization-title {
+    margin-top: 0;
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -148,6 +186,11 @@ body {
     font-size: 16px;
     line-height: 1.88;
  }
+
+.section-button {
+    padding-bottom: 16px;
+    margin-bottom: 34px;
+} 
 
 
 /* Features */
@@ -181,16 +224,32 @@ body {
 }
 
 .team-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 }
 
 .team-profession {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
 }
+
+/* Portfolio */
+
+.item-portfolio {
+    padding-bottom: 20px;
+    display: inline-block;
+    min-width: 370px;
+    text-align: center;
+    border: 1px solid var(--item-br-color);
+}
+
 
 /* Button */
 
@@ -221,7 +280,15 @@ body {
 /* Footer */
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--primary-text-color);
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    display: inline-block;
 }
 
 .colorlogo-white {
@@ -229,6 +296,9 @@ body {
 }
 
 .footer-text {
+    margin-top: 0;
+    margin-bottom: 9px;
+
     color: var(--primary-bg-color);
     font-weight: 400;
     font-size: 14px;
@@ -240,5 +310,10 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+}
+
+.footer-email {
+    margin-bottom: 9px;
+    display: inline-block;
 }
 
