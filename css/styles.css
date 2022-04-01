@@ -24,10 +24,10 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
 .list {
@@ -162,6 +162,7 @@ body {
 
  .section-list {
      display: flex;
+     justify-content: space-between;
  }
 
  .section.team {
@@ -173,6 +174,12 @@ body {
 
  .team-profession, .specialization-text {
      color: var(--title-text-color);
+ }
+
+ .specialization-list {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
  }
 
  .specialization-title {
@@ -275,8 +282,13 @@ body {
     border: 1px solid var(--item-br-color);
 }
 
+.container-button {
+
+}
+
 .button-list {
     display: flex;
+    justify-content: center;
 }
 
 
