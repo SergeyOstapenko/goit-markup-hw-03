@@ -160,6 +160,10 @@ body {
     text-align: center;
  }
 
+ .section-list {
+     display: flex;
+ }
+
  .section.team {
      margin-bottom: 0;
      padding-top: 94px;
@@ -174,6 +178,7 @@ body {
  .specialization-title {
     margin-top: 0;
     margin-bottom: 4px;
+    padding-left: 24px;
 
     font-weight: 700;
     font-size: 18px;
@@ -182,6 +187,10 @@ body {
  }
 
  .specialization-text {
+    margin-top: o;
+    margin-bottom: 0;
+    padding-left: 24px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
@@ -198,6 +207,14 @@ body {
 .feature-list .section-text {
     color: var(--title-text-color);
     }
+
+.feature-list {
+    display: flex;
+}
+
+.feature-list .feature-item {
+    width: 270px;
+}
 
 .title {
     margin-top: 0;
@@ -220,7 +237,13 @@ body {
 /* Team */
 
 .team-list {
+    display: flex;
     text-align: center;
+}
+
+.team-item {
+    border: 1px solid transparent;
+    background-color: var(--primary-bg-color);
 }
 
 .team-name {
@@ -235,6 +258,7 @@ body {
 .team-profession {
     margin-top: 0;
     margin-bottom: 0;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -243,11 +267,14 @@ body {
 /* Portfolio */
 
 .item-portfolio {
-    padding-bottom: 20px;
+    margin-bottom: 30px;
     display: inline-block;
     min-width: 370px;
-    text-align: center;
     border: 1px solid var(--item-br-color);
+}
+
+.button-list {
+    display: flex;
 }
 
 
