@@ -298,7 +298,7 @@ body {
     border-radius: 4px;
     padding: 10px 32px;
     display: inline-block;
-    min-width: 200px;
+    /* min-width: 200px; */
     border: 1px solid transparent;
 
     color: var(--primary-text-color);
@@ -310,13 +310,19 @@ body {
 }
 
 .button.primery {
+    padding-left: 22px;
+    padding-right: 22px;
+
     background-color: var(--accent-text-color);
     color: var(--primary-bg-color);
 }
 
 .button.secondary {
+    margin-right: 8px;
+
     background-color: var(--secondary-bg-color);
 }
+
 
 /* Footer */
 
