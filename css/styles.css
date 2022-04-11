@@ -35,10 +35,17 @@ body {
     list-style: none;
 }
 
+.link {
+    text-decoration: none;
+}
+
 .container.main-container {
     display: flex;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
+
 
 /* site nav */
 
@@ -68,10 +75,6 @@ body {
     color: var(--primary-text-color);
 }
 
-
-.link {
-    text-decoration: none;
-}
 
 .header-link {
     color: var(--primary-text-color);
@@ -136,6 +139,8 @@ body {
  .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
+    padding-top: 200px;
+
     color: var(--primary-bg-color);
     font-weight: 900;
     font-size: 44px;
@@ -315,6 +320,7 @@ body {
 .button.primery {
     padding-left: 22px;
     padding-right: 22px;
+    margin-bottom: 200px;
 
     background-color: var(--accent-text-color);
     color: var(--primary-bg-color);
@@ -324,6 +330,12 @@ body {
     margin-left: 8px;
 
     background-color: var(--secondary-bg-color);
+}
+
+.button.secondary:hover, 
+.button.secondary:focus {
+    background-color: var(--accent-text-color);
+    color: var(--primary-bg-color);
 }
 
 
@@ -353,6 +365,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    font-style: normal;
 }
 
 .footer-email, .footer-tel {
@@ -360,6 +373,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    font-style: normal;
 }
 
 .footer-email {
