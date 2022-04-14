@@ -11,6 +11,7 @@
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA;
     --item-br-color: #EEEEEE;
+    --btn-hover-color: #188CE8;
 }
 
 
@@ -19,6 +20,12 @@ body {
     color: var(--primary-text-color);
     font-family: 'Roboto', 'sans-serif';
     letter-spacing: 0.03em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -42,12 +49,14 @@ body {
 .container.main-container {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
 
 /* site nav */
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 
 .header-nav {
     display: flex;
@@ -77,6 +86,9 @@ body {
 
 
 .header-link {
+    display: block;
+    padding: 32px 0;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -132,6 +144,9 @@ body {
  /* Hero */
 
  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
      background-color: #2F303A;
      text-align: center;
  }
@@ -139,7 +154,6 @@ body {
  .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
-    padding-top: 200px;
 
     color: var(--primary-bg-color);
     font-weight: 900;
@@ -183,7 +197,6 @@ body {
  .specialization-list {
      display: flex;
      flex-wrap: wrap;
-     justify-content: space-between;
  }
 
  .specialization-title {
@@ -221,11 +234,14 @@ body {
 
 .feature-list {
     display: flex;
-    justify-content: space-between;
 }
 
 .feature-list .feature-item {
     width: 270px;
+}
+
+.feature-item:nth-child(n+2) {
+    margin-left: 30px;
 }
 
 .title {
@@ -250,7 +266,6 @@ body {
 
 .team-list {
     display: flex;
-    justify-content: space-between;
     text-align: center;
 
 }
@@ -260,6 +275,10 @@ body {
     border-radius: 0px 0px 4px 4px;
 
     background-color: var(--primary-bg-color);
+}
+
+.team-item:nth-child(n+2) {
+    margin-left: 30px;
 }
 
 .team-name {
@@ -294,6 +313,10 @@ body {
     margin-bottom: 0;
 }
 
+.item-portfolio {
+    margin-left: 29px;
+}
+
 
 .button-list {
     display: flex;
@@ -320,17 +343,24 @@ body {
 .button.primery {
     padding-left: 22px;
     padding-right: 22px;
-    margin-bottom: 200px;
 
     background-color: var(--accent-text-color);
     color: var(--primary-bg-color);
 }
 
-.button.secondary {
-    margin-left: 8px;
+.button.primery:hover,
+.button.primery:focus {
+    background-color: var(--btn-hover-color);
+}
 
+.button.secondary {
     background-color: var(--secondary-bg-color);
 }
+
+.button.secondary:nth-child(n+2) {
+    margin-left: 8px;
+}
+
 
 .button.secondary:hover, 
 .button.secondary:focus {
