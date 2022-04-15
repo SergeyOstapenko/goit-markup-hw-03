@@ -165,6 +165,7 @@ h1, h2, h3, h4, p {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
  }
 
  /* Section */
@@ -268,7 +269,7 @@ h1, h2, h3, h4, p {
 
 .team-content {
     padding: 30px;
-    
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
