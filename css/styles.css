@@ -207,12 +207,9 @@ h1, h2, h3, h4, p {
      color: var(--title-text-color);
  }
 
- 
-
 .section-button {
     margin-bottom: 94px;
 } 
-
 
 /* Features */
 
@@ -271,6 +268,8 @@ h1, h2, h3, h4, p {
 
 .team-content {
     padding: 30px;
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-name {
